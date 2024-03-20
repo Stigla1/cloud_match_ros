@@ -1,0 +1,33 @@
+# inputs
+template_file: ""
+input_cloud_topic: ""
+
+# model voxelization and normals
+model_leaf_size: 0.003
+model_normals_search_radius: 0.01
+ 
+# scan voxelization and normals
+scan_leaf_size: 0.003
+scan_normals_search_radius: 0.01
+ 
+# FPFH params
+fpfh_search_radius: 0.01
+ 
+# sample consensus prerejective params
+max_iterations_prerej: 5000
+num_samples_prerej: 3
+similarity_thresh_prerej: 0.7
+max_corr_distance_prerej: 1.0
+inlier_fract_prerej: 0.25
+threshold_prerej: 1.43e-3
+ 
+# icp params
+max_corr_distance_icp: 0.01
+max_iterations_icp: 5000
+transf_e_icp: 1.0e-18
+euclidean_fit_e_icp: 1.0e-18
+threshold_icp: 0.3e-5
+
+# world definitions
+base_frame_name: "map"
+object_frame_name: "object"
